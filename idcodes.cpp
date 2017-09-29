@@ -1,0 +1,11 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+int main(int argc, char *argv[]) {
+	string s;
+	for (cin >> s; s != "#"; cin >> s) {
+		if ( next_permutation(s.begin(), s.end()) ) cout << s << endl;
+		else cout << "No Successor\n";
+	}
+}
